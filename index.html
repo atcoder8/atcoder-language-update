@@ -1,0 +1,335 @@
+<!DOCTYPE html><html  lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AtCoder言語アップデート</title>
+<style>*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-tap-highlight-color:transparent}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-size:1em;font-variation-settings:normal}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-feature-settings:inherit;font-size:100%;font-variation-settings:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]:where(:not([hidden=until-found])){display:none}.sticky{position:sticky}.top-0{top:0}.z-10{z-index:10}.flex{display:flex}.table{display:table}.max-h-dvh{max-height:100dvh}.max-h-full{max-height:100%}.w-fit{width:-moz-fit-content;width:fit-content}.w-full{width:100%}.max-w-36{max-width:9rem}.border-collapse{border-collapse:collapse}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.place-items-center{place-items:center}.space-x-1>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-left:calc(.25rem*(1 - var(--tw-space-x-reverse)));margin-right:calc(.25rem*var(--tw-space-x-reverse))}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(.25rem*var(--tw-space-y-reverse));margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)))}.overflow-auto{overflow:auto}.text-nowrap{text-wrap:nowrap}.border{border-width:1px}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219/var(--tw-border-opacity,1))}.border-gray-700{--tw-border-opacity:1;border-color:rgb(55 65 81/var(--tw-border-opacity,1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity,1))}.bg-gray-300{--tw-bg-opacity:1;background-color:rgb(209 213 219/var(--tw-bg-opacity,1))}.bg-gray-700{--tw-bg-opacity:1;background-color:rgb(55 65 81/var(--tw-bg-opacity,1))}.p-1{padding:.25rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-1{padding-bottom:.25rem;padding-top:.25rem}.text-start{text-align:start}.text-2xl{font-size:1.5rem;line-height:2rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.font-extrabold{font-weight:800}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}</style>
+<link rel="preload" as="fetch" crossorigin="anonymous" href="/atcoder-language-update/_payload.json?768957b2-1bec-417e-81cf-3a493426306d">
+<link rel="modulepreload" as="script" crossorigin href="/atcoder-language-update/_nuxt/BIzMQAL-.js">
+<link rel="preload" as="fetch" fetchpriority="low" crossorigin="anonymous" href="/atcoder-language-update/_nuxt/builds/meta/768957b2-1bec-417e-81cf-3a493426306d.json">
+<link rel="prefetch" as="script" crossorigin href="/atcoder-language-update/_nuxt/CeiNO9_j.js">
+<link rel="prefetch" as="script" crossorigin href="/atcoder-language-update/_nuxt/CQnB8CKj.js">
+<link rel="prefetch" as="script" crossorigin href="/atcoder-language-update/_nuxt/Bi9HcTar.js">
+<link rel="icon" type="image/jpeg" href="favicon.ico">
+<script type="module" src="/atcoder-language-update/_nuxt/BIzMQAL-.js" crossorigin></script>
+<script id="unhead:payload" type="application/json">{"title":"AtCoder言語アップデート"}</script></head><body><div id="__nuxt"><div class="max-h-dvh p-1 flex flex-col space-y-1"><div class="flex-row space-x-1 place-items-center"><label class="text-lg">検索</label><input value="" class="border border-collapse border-gray-700 max-w-36"></div><div class="max-h-full overflow-auto"><table class="border border-collapse border-gray-300"><caption class="font-extrabold text-2xl"> Language update 2023 </caption><thead class="sticky top-0 z-10 bg-gray-700 text-white"><tr><th class="w-fit px-5 py-1 text-nowrap">言語</th><th class="w-fit px-5 py-1 text-nowrap">ID</th><th class="w-fit px-5 py-1 text-nowrap">処理系</th><th class="w-fit px-5 py-1 text-nowrap">バージョン</th><th class="w-full px-5 py-1 text-nowrap">ライブラリ</th></tr></thead><tbody><!--[--><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">C++ 20</th><td class="w-fit px-5 py-1 text-nowrap">5001</td><td class="w-fit px-5 py-1 text-nowrap">gcc</td><td class="w-fit px-5 py-1 text-nowrap">12.2</td><td class="w-full"><div><details><summary></summary> AC Library@1.5.1
+Boost@1.82.0
+GMP@6.2.1
+Eigen@3.4.0-2ubuntu2</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Go</th><td class="w-fit px-5 py-1 text-nowrap">5002</td><td class="w-fit px-5 py-1 text-nowrap">go</td><td class="w-fit px-5 py-1 text-nowrap">1.20.6</td><td class="w-full"><div><details><summary></summary> gods
+gonum
+gostl
+golang.org/x/exp</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">C# 11.0</th><td class="w-fit px-5 py-1 text-nowrap">5003</td><td class="w-fit px-5 py-1 text-nowrap">.NET</td><td class="w-fit px-5 py-1 text-nowrap">7.0.7</td><td class="w-full"><div><details><summary></summary> ac-library-csharp@3.0.0-atcoder8
+MathNet.Numerics@5.0.0
+Microsoft.ML@2.0.1
+Microsoft.ML.LightGbm@2.0.1</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Kotlin</th><td class="w-fit px-5 py-1 text-nowrap">5004</td><td class="w-fit px-5 py-1 text-nowrap">Kotlin/JVM</td><td class="w-fit px-5 py-1 text-nowrap">1.8.20</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Java</th><td class="w-fit px-5 py-1 text-nowrap">5005</td><td class="w-fit px-5 py-1 text-nowrap">OpenJDK</td><td class="w-fit px-5 py-1 text-nowrap">17</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Nim</th><td class="w-fit px-5 py-1 text-nowrap">5006</td><td class="w-fit px-5 py-1 text-nowrap">Nim</td><td class="w-fit px-5 py-1 text-nowrap">1.6.14</td><td class="w-full"><div><details><summary></summary> neo
+Nim-ACL
+bignum</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">V</th><td class="w-fit px-5 py-1 text-nowrap">5007</td><td class="w-fit px-5 py-1 text-nowrap">V</td><td class="w-fit px-5 py-1 text-nowrap">0.4</td><td class="w-full"><div><details><summary></summary> vsl
+vtl
+proconio</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Zig</th><td class="w-fit px-5 py-1 text-nowrap">5008</td><td class="w-fit px-5 py-1 text-nowrap">Zig</td><td class="w-fit px-5 py-1 text-nowrap">0.10.1</td><td class="w-full"><div><details><summary></summary> zig-string
+ziter</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">JavaScript</th><td class="w-fit px-5 py-1 text-nowrap">5009</td><td class="w-fit px-5 py-1 text-nowrap">Node.js</td><td class="w-fit px-5 py-1 text-nowrap">18.16.1</td><td class="w-full"><div><details><summary></summary> mathjs@11.8.2</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">JavaScript</th><td class="w-fit px-5 py-1 text-nowrap">5010</td><td class="w-fit px-5 py-1 text-nowrap">Deno</td><td class="w-fit px-5 py-1 text-nowrap">1.35.1</td><td class="w-full"><div><details><summary></summary> std@0.194.0
+mathjs@11.8.2</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">R</th><td class="w-fit px-5 py-1 text-nowrap">5011</td><td class="w-fit px-5 py-1 text-nowrap">GNU R</td><td class="w-fit px-5 py-1 text-nowrap">4.2.1</td><td class="w-full"><div><details><summary></summary> Rcpp 1.0.9
+stringr 1.5.0
+purrr 1.0.1
+magrittr 2.0.3
+sets 1.0-21
+dequer 2.0-2
+zeallot 0.1.0
+lubridate 1.9.2
+readr 2.1.4
+
+</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">D</th><td class="w-fit px-5 py-1 text-nowrap">5012</td><td class="w-fit px-5 py-1 text-nowrap">DMD</td><td class="w-fit px-5 py-1 text-nowrap">2.104.0</td><td class="w-full"><div><details><summary></summary> mir 3.2.3</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">D</th><td class="w-fit px-5 py-1 text-nowrap">5013</td><td class="w-fit px-5 py-1 text-nowrap">LDC</td><td class="w-fit px-5 py-1 text-nowrap">1.32.2</td><td class="w-full"><div><details><summary></summary> mir 3.2.3</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Swift</th><td class="w-fit px-5 py-1 text-nowrap">5014</td><td class="w-fit px-5 py-1 text-nowrap">swift</td><td class="w-fit px-5 py-1 text-nowrap">5.8.1</td><td class="w-full"><div><details><summary></summary> swift-collections
+swift-algorithms</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Dart</th><td class="w-fit px-5 py-1 text-nowrap">5015</td><td class="w-fit px-5 py-1 text-nowrap">Dart</td><td class="w-fit px-5 py-1 text-nowrap">3.0.5</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">PHP</th><td class="w-fit px-5 py-1 text-nowrap">5016</td><td class="w-fit px-5 py-1 text-nowrap">php</td><td class="w-fit px-5 py-1 text-nowrap">8.2.8</td><td class="w-full"><div><details><summary></summary> php8.2-gmp
+php8.2-bcmath
+php8.2-sqlite3</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">C</th><td class="w-fit px-5 py-1 text-nowrap">5017</td><td class="w-fit px-5 py-1 text-nowrap">gcc</td><td class="w-fit px-5 py-1 text-nowrap">12.2.0</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Ruby</th><td class="w-fit px-5 py-1 text-nowrap">5018</td><td class="w-fit px-5 py-1 text-nowrap">ruby</td><td class="w-fit px-5 py-1 text-nowrap">3.2.2</td><td class="w-full"><div><details><summary></summary> rbtree
+ac-library-rb
+faster_prime
+sorted_set
+numo-narray
+polars-ruby</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Crystal</th><td class="w-fit px-5 py-1 text-nowrap">5019</td><td class="w-fit px-5 py-1 text-nowrap">Crystal</td><td class="w-fit px-5 py-1 text-nowrap">1.9.1</td><td class="w-full"><div><details><summary></summary> ac-library.cr</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Brainfuck</th><td class="w-fit px-5 py-1 text-nowrap">5020</td><td class="w-fit px-5 py-1 text-nowrap">bf</td><td class="w-fit px-5 py-1 text-nowrap">20041219</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">F# 7.0</th><td class="w-fit px-5 py-1 text-nowrap">5021</td><td class="w-fit px-5 py-1 text-nowrap">.NET</td><td class="w-fit px-5 py-1 text-nowrap">7.0.7</td><td class="w-full"><div><details><summary></summary> ac-library-csharp@3.0.0-atcoder8
+MathNet.Numerics@5.0.0
+MathNet.Numerics.FSharp@5.0.0
+Microsoft.ML@2.0.1
+Microsoft.ML.LightGbm@2.0.1</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Julia</th><td class="w-fit px-5 py-1 text-nowrap">5022</td><td class="w-fit px-5 py-1 text-nowrap">Julia</td><td class="w-fit px-5 py-1 text-nowrap">1.9.2</td><td class="w-full"><div><details><summary></summary> DataStructures,
+DelimitedFiles,
+Distributions,
+Primes,
+OffsetArrays,
+Combinatorics,
+StaticArrays,
+IterTools,
+InvertedIndices</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Bash</th><td class="w-fit px-5 py-1 text-nowrap">5023</td><td class="w-fit px-5 py-1 text-nowrap">bash</td><td class="w-fit px-5 py-1 text-nowrap">5.2.2</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Text</th><td class="w-fit px-5 py-1 text-nowrap">5024</td><td class="w-fit px-5 py-1 text-nowrap">cat</td><td class="w-fit px-5 py-1 text-nowrap">8.32</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Haskell</th><td class="w-fit px-5 py-1 text-nowrap">5025</td><td class="w-fit px-5 py-1 text-nowrap">GHC</td><td class="w-fit px-5 py-1 text-nowrap">9.4.5</td><td class="w-full"><div><details><summary></summary> Cabal ^&gt;=3.10.1.0
+Cabal-syntax ^&gt;=3.10.1.0
+QuickCheck ^&gt;=2.14.3
+adjunctions ^&gt;=4.4.2
+array ==0.5.4.0
+attoparsec ^&gt;=0.14.4
+base ==4.17.1.0
+bifunctors ^&gt;=5.6.1
+binary ^&gt;=0.8.9.1
+bitvec ^&gt;=1.1.4.0
+bytestring ^&gt;=0.11.4.0
+comonad ^&gt;=5.0.8
+containers ^&gt;=0.6.7
+contravariant ^&gt;=1.5.5
+deepseq ==1.4.8.0
+directory &gt;=1.3.7.1 &amp;&amp; &lt;1.3.8.0
+distributive ^&gt;=0.6.2.1
+exceptions ^&gt;=0.10.7
+extra ^&gt;=1.7.13
+fgl ^&gt;=5.8.1.1
+filepath &gt;=1.4.2.2 &amp;&amp; &lt;1.4.99
+free ^&gt;=5.2
+ghc-bignum ==1.3
+ghc-boot-th ==9.4.5
+ghc-prim ==0.9.0
+hashable ^&gt;=1.4.2.0
+heaps ^&gt;=0.4
+indexed-traversable ^&gt;=0.1.2.1
+indexed-traversable-instances ^&gt;=0.1.1.2
+integer-gmp ^&gt;=1.1
+integer-logarithms ^&gt;=1.0.3.1
+kan-extensions ^&gt;=5.2.5
+lens ^&gt;=5.2.2
+linear-base ^&gt;=0.3.1
+list-t ^&gt;=1.0.5.6
+massiv ^&gt;=1.0.4.0
+megaparsec ^&gt;=9.4.1
+mono-traversable ^&gt;=1.0.15.3
+mtl ^&gt;=2.3.1
+mutable-containers ^&gt;=0.3.4.1
+mwc-random ^&gt;=0.15.0.2
+parallel ^&gt;=3.2.2.0
+parsec ^&gt;=3.1.16.1
+parser-combinators ^&gt;=1.3.0
+pretty ^&gt;=1.1.3.6
+primitive ^&gt;=0.8.0.0
+process ^&gt;=1.6.17.0
+profunctors ^&gt;=5.6.2
+psqueues ^&gt;=0.2.7.3
+random ^&gt;=1.2.1.1
+reflection ^&gt;=2.1.7
+regex-tdfa ^&gt;=1.3.2.1
+safe-exceptions ^&gt;=0.1.7.3
+scientific ^&gt;=0.3.7.0
+semialign ^&gt;=1.3
+semigroupoids ^&gt;=6.0.0.1
+split ^&gt;=0.2.3.5
+stm ^&gt;=2.5.1.0
+strict ^&gt;=0.5
+strict-lens ^&gt;=0.4.0.3
+tagged ^&gt;=0.8.7
+template-haskell ==2.19.0.0
+text ^&gt;=2.0.2
+tf-random ^&gt;=0.5
+these ^&gt;=1.2
+these-lens ^&gt;=1.0.1.3
+time ^&gt;=1.12.2
+transformers ^&gt;=0.6.1.0
+trifecta ^&gt;=2.1.2
+unboxing-vector ^&gt;=0.2.0.0
+unix ==2.7.3
+unordered-containers ^&gt;=0.2.19.1
+utility-ht ^&gt;=0.0.17
+vector ^&gt;=0.13.0.0
+vector-algorithms ^&gt;=0.9.0.1
+vector-stream ^&gt;=0.1.0.0
+vector-th-unbox ^&gt;=0.2.2
+xhtml ^&gt;=3000.2.2.1
+</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Fortran</th><td class="w-fit px-5 py-1 text-nowrap">5026</td><td class="w-fit px-5 py-1 text-nowrap">gfortran</td><td class="w-fit px-5 py-1 text-nowrap">12.2</td><td class="w-full"><div><details><summary></summary> stdlib</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Lua</th><td class="w-fit px-5 py-1 text-nowrap">5027</td><td class="w-fit px-5 py-1 text-nowrap">LuaJIT</td><td class="w-fit px-5 py-1 text-nowrap">2.1.0-beta3</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">C++ 23</th><td class="w-fit px-5 py-1 text-nowrap">5028</td><td class="w-fit px-5 py-1 text-nowrap">gcc</td><td class="w-fit px-5 py-1 text-nowrap">12.2</td><td class="w-full"><div><details><summary></summary> AC Library@1.5.1
+Boost@1.82.0
+GMP@6.2.1
+Eigen@3.4.0-2ubuntu2</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Common Lisp</th><td class="w-fit px-5 py-1 text-nowrap">5029</td><td class="w-fit px-5 py-1 text-nowrap">SBCL</td><td class="w-fit px-5 py-1 text-nowrap">2.3.6</td><td class="w-full"><div><details><summary></summary> fast-generic-functions
+trivia
+iterate
+cl-ppcre</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">COBOL (Free)</th><td class="w-fit px-5 py-1 text-nowrap">5030</td><td class="w-fit px-5 py-1 text-nowrap">GnuCOBOL</td><td class="w-fit px-5 py-1 text-nowrap">3.1.2</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">C++ 23</th><td class="w-fit px-5 py-1 text-nowrap">5031</td><td class="w-fit px-5 py-1 text-nowrap">Clang</td><td class="w-fit px-5 py-1 text-nowrap">16.0.6</td><td class="w-full"><div><details><summary></summary> AC Library@1.5.1
+Boost@1.82.0
+GMP@6.2.1
+Eigen@3.4.0-2ubuntu2
+z3@4.8.12-1
+libbz2-1.0@1.0.8-5build1
+liblzma(xz-utils)@5.2.5-2.1
+sqlite3@3.39.3-1
+openssl@3.0.5-2ubuntu2.1
+zlib@1:1.2.11.dfsg-4.1ubuntu1
+lz4@1.9.3-2build2
+lzo2@2.10-2build3</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Zsh</th><td class="w-fit px-5 py-1 text-nowrap">5032</td><td class="w-fit px-5 py-1 text-nowrap">Zsh</td><td class="w-fit px-5 py-1 text-nowrap">5.9</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">SageMath</th><td class="w-fit px-5 py-1 text-nowrap">5033</td><td class="w-fit px-5 py-1 text-nowrap">SageMath</td><td class="w-fit px-5 py-1 text-nowrap">9.5</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Sed</th><td class="w-fit px-5 py-1 text-nowrap">5034</td><td class="w-fit px-5 py-1 text-nowrap">GNU sed</td><td class="w-fit px-5 py-1 text-nowrap">4.8</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">bc</th><td class="w-fit px-5 py-1 text-nowrap">5035</td><td class="w-fit px-5 py-1 text-nowrap">bc</td><td class="w-fit px-5 py-1 text-nowrap">1.07.1</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">dc</th><td class="w-fit px-5 py-1 text-nowrap">5036</td><td class="w-fit px-5 py-1 text-nowrap">dc</td><td class="w-fit px-5 py-1 text-nowrap">1.07.1</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Perl</th><td class="w-fit px-5 py-1 text-nowrap">5037</td><td class="w-fit px-5 py-1 text-nowrap">perl </td><td class="w-fit px-5 py-1 text-nowrap">5.34</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">AWK</th><td class="w-fit px-5 py-1 text-nowrap">5038</td><td class="w-fit px-5 py-1 text-nowrap">GNU Awk</td><td class="w-fit px-5 py-1 text-nowrap">5.0.1</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">なでしこ</th><td class="w-fit px-5 py-1 text-nowrap">5039</td><td class="w-fit px-5 py-1 text-nowrap">cnako3</td><td class="w-fit px-5 py-1 text-nowrap">3.4.20</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Assembly x64</th><td class="w-fit px-5 py-1 text-nowrap">5040</td><td class="w-fit px-5 py-1 text-nowrap">NASM</td><td class="w-fit px-5 py-1 text-nowrap">2.15.05</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Pascal</th><td class="w-fit px-5 py-1 text-nowrap">5041</td><td class="w-fit px-5 py-1 text-nowrap">fpc</td><td class="w-fit px-5 py-1 text-nowrap">3.2.2</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">C# 11.0 AOT</th><td class="w-fit px-5 py-1 text-nowrap">5042</td><td class="w-fit px-5 py-1 text-nowrap">.NET</td><td class="w-fit px-5 py-1 text-nowrap">7.0.7</td><td class="w-full"><div><details><summary></summary> ac-library-csharp@3.0.0-atcoder8
+MathNet.Numerics@5.0.0</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Lua</th><td class="w-fit px-5 py-1 text-nowrap">5043</td><td class="w-fit px-5 py-1 text-nowrap">Lua</td><td class="w-fit px-5 py-1 text-nowrap">5.4.6</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Prolog</th><td class="w-fit px-5 py-1 text-nowrap">5044</td><td class="w-fit px-5 py-1 text-nowrap">SWI-Prolog</td><td class="w-fit px-5 py-1 text-nowrap">9.0.4</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">PowerShell</th><td class="w-fit px-5 py-1 text-nowrap">5045</td><td class="w-fit px-5 py-1 text-nowrap">PowerShell</td><td class="w-fit px-5 py-1 text-nowrap">7.3.1</td><td class="w-full"><div><details><summary></summary> ac-library-csharp@3.0.0-atcoder8</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Scheme</th><td class="w-fit px-5 py-1 text-nowrap">5046</td><td class="w-fit px-5 py-1 text-nowrap">Gauche</td><td class="w-fit px-5 py-1 text-nowrap">0.9.12</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Scala 3.3.0</th><td class="w-fit px-5 py-1 text-nowrap">5047</td><td class="w-fit px-5 py-1 text-nowrap">Scala Native</td><td class="w-fit px-5 py-1 text-nowrap">0.4.14</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Visual Basic 16.9</th><td class="w-fit px-5 py-1 text-nowrap">5048</td><td class="w-fit px-5 py-1 text-nowrap">.NET</td><td class="w-fit px-5 py-1 text-nowrap">7.0.7</td><td class="w-full"><div><details><summary></summary> ac-library-csharp@3.0.0-atcoder8
+MathNet.Numerics@5.0.0
+Microsoft.ML@2.0.1
+Microsoft.ML.LightGbm@2.0.1</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Forth</th><td class="w-fit px-5 py-1 text-nowrap">5049</td><td class="w-fit px-5 py-1 text-nowrap">gforth</td><td class="w-fit px-5 py-1 text-nowrap">0.7.3</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Clojure</th><td class="w-fit px-5 py-1 text-nowrap">5050</td><td class="w-fit px-5 py-1 text-nowrap">babashka</td><td class="w-fit px-5 py-1 text-nowrap">1.3.181</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Erlang</th><td class="w-fit px-5 py-1 text-nowrap">5051</td><td class="w-fit px-5 py-1 text-nowrap">Erlang</td><td class="w-fit px-5 py-1 text-nowrap">26.0.2</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">TypeScript 5.1</th><td class="w-fit px-5 py-1 text-nowrap">5052</td><td class="w-fit px-5 py-1 text-nowrap">Deno</td><td class="w-fit px-5 py-1 text-nowrap">1.35.1</td><td class="w-full"><div><details><summary></summary> std@0.194.0
+tstl@2.5.13
+mathjs@11.8.2</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">C++ 17</th><td class="w-fit px-5 py-1 text-nowrap">5053</td><td class="w-fit px-5 py-1 text-nowrap">gcc</td><td class="w-fit px-5 py-1 text-nowrap">12.2</td><td class="w-full"><div><details><summary></summary> AC Library@1.5.1
+Boost@1.82.0</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Rust</th><td class="w-fit px-5 py-1 text-nowrap">5054</td><td class="w-fit px-5 py-1 text-nowrap">rustc</td><td class="w-fit px-5 py-1 text-nowrap">1.70.0</td><td class="w-full"><div><details><summary></summary> ac-library-rs@=0.1.1
+once_cell@=1.18.0
+static_assertions@=1.1.0
+varisat@=0.2.2
+memoise@=0.3.2
+argio@=0.2.0
+bitvec@=1.0.1
+counter@=0.5.7
+hashbag@=0.1.11
+pathfinding@=4.3.0
+recur-fn@=2.2.0
+indexing@=0.4.1
+amplify@=3.14.2
+amplify_derive@=2.11.3
+amplify_num@=0.4.1
+easy-ext@=1.0.1
+multimap@=0.9.0
+btreemultimap@=0.1.1
+bstr@=1.6.0
+az@=1.2.1
+glidesort@=0.1.2
+tap@=1.0.1
+omniswap@=0.1.0
+multiversion@=0.7.2
+num@=0.4.1
+num-bigint@=0.4.3
+num-complex@=0.4.3
+num-integer@=0.1.45
+num-iter@=0.1.43
+num-rational@=0.4.1
+num-traits@=0.2.15
+num-derive@=0.4.0
+ndarray@=0.15.6
+nalgebra@=0.32.3
+alga@=0.9.3
+libm@=0.2.7
+rand@=0.8.5
+getrandom@=0.2.10
+rand_chacha@=0.3.1
+rand_core@=0.6.4
+rand_hc@=0.3.2
+rand_pcg@=0.3.1
+rand_distr@=0.4.3
+petgraph@=0.6.3
+indexmap@=2.0.0
+regex@=1.9.1
+lazy_static@=1.4.0
+ordered-float@=3.7.0
+ascii@=1.1.0
+permutohedron@=0.2.4
+superslice@=1.0.0
+itertools@=0.11.0
+itertools-num@=0.1.3
+maplit@=1.0.2
+either@=1.8.1
+im-rc@=15.1.0
+fixedbitset@=0.4.2
+bitset-fixed@=0.1.0
+proconio@=0.4.5
+text_io@=0.1.12
+rustc-hash@=1.1.0
+smallvec@=1.11.0</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Python</th><td class="w-fit px-5 py-1 text-nowrap">5055</td><td class="w-fit px-5 py-1 text-nowrap">CPython</td><td class="w-fit px-5 py-1 text-nowrap">3.11.4</td><td class="w-full"><div><details><summary></summary> numpy==1.24.1
+scipy==1.10.1
+networkx==3.0
+sympy==1.11.1
+sortedcontainers==2.4.0 
+more-itertools==9.0.0
+shapely==2.0.0
+bitarray==2.6.2
+PuLP==2.7.0
+mpmath==1.2.1
+pandas==1.5.2
+z3-solver==4.12.1.0
+scikit-learn==1.2.0
+ortools==9.5.2237
+ac-library-python
+setuptools==66.0.0
+cppyy==2.4.1
+torch==1.13.1
+polars==0.15.15
+lightgbm==3.3.1
+gmpy2==2.1.5
+numba==0.57.0</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Scala</th><td class="w-fit px-5 py-1 text-nowrap">5056</td><td class="w-fit px-5 py-1 text-nowrap">Dotty</td><td class="w-fit px-5 py-1 text-nowrap">3.3.0</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Koka</th><td class="w-fit px-5 py-1 text-nowrap">5057</td><td class="w-fit px-5 py-1 text-nowrap">koka</td><td class="w-fit px-5 py-1 text-nowrap">2.4.0</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">TypeScript 5.1</th><td class="w-fit px-5 py-1 text-nowrap">5058</td><td class="w-fit px-5 py-1 text-nowrap">Node.js</td><td class="w-fit px-5 py-1 text-nowrap">18.16.1</td><td class="w-full"><div><details><summary></summary> typescript@5.1.6
+tstl@2.5.13
+mathjs@11.8.2</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">OCaml</th><td class="w-fit px-5 py-1 text-nowrap">5059</td><td class="w-fit px-5 py-1 text-nowrap">ocamlopt</td><td class="w-fit px-5 py-1 text-nowrap">5.0.0</td><td class="w-full"><div><details><summary></summary> num@1.4
+containers@3.12
+core@v0.16.1
+iter@1.7
+batteries@3.6.0</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Raku</th><td class="w-fit px-5 py-1 text-nowrap">5060</td><td class="w-fit px-5 py-1 text-nowrap">Rakudo</td><td class="w-fit px-5 py-1 text-nowrap">2023.06</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Vim</th><td class="w-fit px-5 py-1 text-nowrap">5061</td><td class="w-fit px-5 py-1 text-nowrap">vim</td><td class="w-fit px-5 py-1 text-nowrap">9.0.0242</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Emacs Lisp (Native Compile)</th><td class="w-fit px-5 py-1 text-nowrap">5062</td><td class="w-fit px-5 py-1 text-nowrap">GNU Emacs</td><td class="w-fit px-5 py-1 text-nowrap">28.2</td><td class="w-full"><div><details><summary></summary> dash.el
+s.el
+recur.el
+ht.el</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Python</th><td class="w-fit px-5 py-1 text-nowrap">5063</td><td class="w-fit px-5 py-1 text-nowrap">Mambaforge / CPython</td><td class="w-fit px-5 py-1 text-nowrap">3.10.10</td><td class="w-full"><div><details><summary></summary> numpy==1.24.3
+numba==0.57.0
+scipy==1.10.1
+networkx==3.1
+sympy==1.11.1
+sortedcontainers==2.4.0
+more-itertools==9.1.0
+shapely==2.0.1
+bitarray==2.7.3
+PuLP==2.7.0
+mpmath==1.3.0
+pandas==2.0.0
+scikit-learn==1.2.2
+scikit-learn-intelex==2023.0.2
+ortools-python==9.6
+ac-library-python
+cppyy==2.4.2
+pytorch==2.0.0
+polars==0.16.18
+lightgbm==3.3.5
+cython==0.29.34
+graphblas==7.4.4
+
+pythonの方と比較すると numba, scikit-learn-intelex, cython, graphblas を追加しています。
+PyTorch は、2.0 になっています。python 3.11 にはまだ対応していません。 </details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Clojure</th><td class="w-fit px-5 py-1 text-nowrap">5064</td><td class="w-fit px-5 py-1 text-nowrap">clojure</td><td class="w-fit px-5 py-1 text-nowrap">1.11.1</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">プロデル</th><td class="w-fit px-5 py-1 text-nowrap">5065</td><td class="w-fit px-5 py-1 text-nowrap">mono版プロデル</td><td class="w-fit px-5 py-1 text-nowrap">1.9.1182</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">ECLiPSe</th><td class="w-fit px-5 py-1 text-nowrap">5066</td><td class="w-fit px-5 py-1 text-nowrap">ECLiPSe</td><td class="w-fit px-5 py-1 text-nowrap">7.1_13</td><td class="w-full"><div><details><summary></summary> eplex</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Nibbles (literate form)</th><td class="w-fit px-5 py-1 text-nowrap">5067</td><td class="w-fit px-5 py-1 text-nowrap">nibbles</td><td class="w-fit px-5 py-1 text-nowrap">1.01</td><td class="w-full"><div><details><summary></summary> ghc
+base
+template-haskell
+containers
+bytestring
+process
+filepath
+dlist
+split
+murmur-hash
+memoize</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Ada</th><td class="w-fit px-5 py-1 text-nowrap">5068</td><td class="w-fit px-5 py-1 text-nowrap">GNAT</td><td class="w-fit px-5 py-1 text-nowrap">12.2</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">jq</th><td class="w-fit px-5 py-1 text-nowrap">5069</td><td class="w-fit px-5 py-1 text-nowrap">jq</td><td class="w-fit px-5 py-1 text-nowrap">1.6</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Cyber</th><td class="w-fit px-5 py-1 text-nowrap">5070</td><td class="w-fit px-5 py-1 text-nowrap">Cyber</td><td class="w-fit px-5 py-1 text-nowrap">v0.2-Latest</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Carp</th><td class="w-fit px-5 py-1 text-nowrap">5071</td><td class="w-fit px-5 py-1 text-nowrap">Carp</td><td class="w-fit px-5 py-1 text-nowrap">0.5.5</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">C++ 17</th><td class="w-fit px-5 py-1 text-nowrap">5072</td><td class="w-fit px-5 py-1 text-nowrap">Clang</td><td class="w-fit px-5 py-1 text-nowrap">16.0.6</td><td class="w-full"><div><details><summary></summary> AC Library@1.5.1
+Boost@1.82.0
+GMP@6.2.1
+Eigen@3.4.0-2ubuntu2
+z3@4.8.12-1
+libbz2-1.0@1.0.8-5build1
+liblzma(xz-utils)@5.2.5-2.1
+sqlite3@3.39.3-1
+openssl@3.0.5-2ubuntu2.1
+zlib@1:1.2.11.dfsg-4.1ubuntu1
+lz4@1.9.3-2build2
+lzo2@2.10-2build3</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">C++ 20</th><td class="w-fit px-5 py-1 text-nowrap">5073</td><td class="w-fit px-5 py-1 text-nowrap">Clang</td><td class="w-fit px-5 py-1 text-nowrap">16.0.6</td><td class="w-full"><div><details><summary></summary> AC Library@1.5.1
+Boost@1.82.0
+GMP@6.2.1
+Eigen@3.4.0-2ubuntu2
+z3@4.8.12-1
+libbz2-1.0@1.0.8-5build1
+liblzma(xz-utils)@5.2.5-2.1
+sqlite3@3.39.3-1
+openssl@3.0.5-2ubuntu2.1
+zlib@1:1.2.11.dfsg-4.1ubuntu1
+lz4@1.9.3-2build2
+lzo2@2.10-2build3</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">LLVM IR</th><td class="w-fit px-5 py-1 text-nowrap">5074</td><td class="w-fit px-5 py-1 text-nowrap">Clang</td><td class="w-fit px-5 py-1 text-nowrap">16.0.6</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Emacs Lisp (Byte Compile)</th><td class="w-fit px-5 py-1 text-nowrap">5075</td><td class="w-fit px-5 py-1 text-nowrap">GNU Emacs</td><td class="w-fit px-5 py-1 text-nowrap">28.2</td><td class="w-full"><div><details><summary></summary> dash.el
+s.el
+recur.el
+ht.el</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Factor</th><td class="w-fit px-5 py-1 text-nowrap">5076</td><td class="w-fit px-5 py-1 text-nowrap">Factor</td><td class="w-fit px-5 py-1 text-nowrap">0.98</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">D</th><td class="w-fit px-5 py-1 text-nowrap">5077</td><td class="w-fit px-5 py-1 text-nowrap">GDC</td><td class="w-fit px-5 py-1 text-nowrap">12.2</td><td class="w-full"><div><details><summary></summary> mir 3.2.3</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Python</th><td class="w-fit px-5 py-1 text-nowrap">5078</td><td class="w-fit px-5 py-1 text-nowrap">PyPy</td><td class="w-fit px-5 py-1 text-nowrap">3.10-v7.3.12</td><td class="w-full"><div><details><summary></summary> numpy==1.24.1
+scipy==1.10.1
+networkx==3.0
+sympy==1.11.1
+sortedcontainers==2.4.0 
+more-itertools==9.0.0
+shapely==2.0.0
+bitarray==2.6.2
+PuLP==2.7.0
+mpmath==1.2.1
+pandas==1.5.2
+z3-solver==4.12.1.0
+scikit-learn==1.3.0
+ac-library-python
+cppyy==2.4.1</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Whitespace</th><td class="w-fit px-5 py-1 text-nowrap">5079</td><td class="w-fit px-5 py-1 text-nowrap">whitespacers</td><td class="w-fit px-5 py-1 text-nowrap">1.0.0</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">&gt;&lt;&gt;</th><td class="w-fit px-5 py-1 text-nowrap">5080</td><td class="w-fit px-5 py-1 text-nowrap">fishr</td><td class="w-fit px-5 py-1 text-nowrap">0.1.0</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">ReasonML</th><td class="w-fit px-5 py-1 text-nowrap">5081</td><td class="w-fit px-5 py-1 text-nowrap">reason</td><td class="w-fit px-5 py-1 text-nowrap">3.9.0</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Python</th><td class="w-fit px-5 py-1 text-nowrap">5082</td><td class="w-fit px-5 py-1 text-nowrap">Cython</td><td class="w-fit px-5 py-1 text-nowrap">0.29.34</td><td class="w-full"><div><details><summary></summary> numpy
+scipy
+networkx</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Octave</th><td class="w-fit px-5 py-1 text-nowrap">5083</td><td class="w-fit px-5 py-1 text-nowrap">GNU Octave</td><td class="w-fit px-5 py-1 text-nowrap">8.2.0</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Haxe (JVM)</th><td class="w-fit px-5 py-1 text-nowrap">5084</td><td class="w-fit px-5 py-1 text-nowrap">Haxe</td><td class="w-fit px-5 py-1 text-nowrap">4.3.1</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Elixir</th><td class="w-fit px-5 py-1 text-nowrap">5085</td><td class="w-fit px-5 py-1 text-nowrap">Elixir</td><td class="w-fit px-5 py-1 text-nowrap">1.15.2</td><td class="w-full"><div><details><summary></summary> Flow@1.2.4
+Nx@0.5.3
+EXLA@0.5.1
+Mnesia
+ETS
+Persistent_term</details></div></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Mercury</th><td class="w-fit px-5 py-1 text-nowrap">5086</td><td class="w-fit px-5 py-1 text-nowrap">Mercury</td><td class="w-fit px-5 py-1 text-nowrap">22.01.6</td><td class="w-full"><!----></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Seed7</th><td class="w-fit px-5 py-1 text-nowrap">5087</td><td class="w-fit px-5 py-1 text-nowrap">Seed7</td><td class="w-fit px-5 py-1 text-nowrap">3.2.1</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">Emacs Lisp (No Compile)</th><td class="w-fit px-5 py-1 text-nowrap">5088</td><td class="w-fit px-5 py-1 text-nowrap">GNU Emacs</td><td class="w-fit px-5 py-1 text-nowrap">28.2</td><td class="w-full"><div><details><summary></summary> dash.el
+s.el
+recur.el
+ht.el</details></div></td></tr><tr class="bg-gray-100"><th class="w-fit px-5 py-1 text-nowrap text-start">Unison</th><td class="w-fit px-5 py-1 text-nowrap">5089</td><td class="w-fit px-5 py-1 text-nowrap">Unison</td><td class="w-fit px-5 py-1 text-nowrap">M5b</td><td class="w-full"><!----></td></tr><tr class="bg-gray-300"><th class="w-fit px-5 py-1 text-nowrap text-start">COBOL</th><td class="w-fit px-5 py-1 text-nowrap">5090</td><td class="w-fit px-5 py-1 text-nowrap">GnuCOBOL(Fixed)</td><td class="w-fit px-5 py-1 text-nowrap">3.1.2</td><td class="w-full"><!----></td></tr><!--]--></tbody></table></div></div></div><div id="teleports"></div><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="true" id="__NUXT_DATA__" data-src="/atcoder-language-update/_payload.json?768957b2-1bec-417e-81cf-3a493426306d">[{"state":1,"once":3,"_errors":4,"serverRendered":6,"path":7,"prerenderedAt":8},["Reactive",2],{},["Set"],["ShallowReactive",5],{},true,"/",1742066665586]</script>
+<script>window.__NUXT__={};window.__NUXT__.config={public:{},app:{baseURL:"/atcoder-language-update/",buildId:"768957b2-1bec-417e-81cf-3a493426306d",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script></body></html>
