@@ -1,0 +1,23 @@
+{
+  "name": "nuxt-app",
+  "homepage": "https://atcoder8.github.io/atcoder-language-update",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "deploy": "NUXT_APP_BASE_URL=/atcoder-language-update/ npx nuxt build --preset github_pages && npx gh-pages --dotfiles -d .output/public"
+  },
+  "dependencies": {
+    "@nuxtjs/tailwindcss": "^6.13.2",
+    "nuxt": "^3.16.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
